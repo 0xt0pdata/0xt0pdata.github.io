@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Assignment 5 - Web Development</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Smart Recycling</h2>
+        <div class="toggle"></div>
+      </header>
+      <video src="motherboard.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Get Money</h2>
+        <h3>For Your <br />Old Computer Equipment</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+          perferendis nesciunt animi voluptatum recusandae libero? Minus et
+          totam architecto consectetur. Vel harum incidunt corporis quo
+          inventore tempore, nobis nesciunt saepe. .
+        </p>
+        <a href="signupform.html">Sign Up</a>
+      </div>
+      <ul class="social">
+        <li>
+          <a href="#"><img src="facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="twitter.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="instagram.png" /></a>
+        </li>
+      </ul>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Plans & Pricing</a></li>
+        <li><a href="#">New Equipment</a></li>
+        <li><a href="signupform.html">Registration</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

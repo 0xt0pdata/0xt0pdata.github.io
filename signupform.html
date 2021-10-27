@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+        <title>Assignment 5 - Web Development</title>
+  </head>
+    <body class="body-register">
+      <section class="form-register">
+        <h4>Smart Recycling Registration</h4>
+          <input class="controls" type="text" name="firtsname" id="firtsname" placeholder="Firts Name">
+          <input class="controls" type="text" name="lastname" id="lastname" placeholder="Last Name">
+          <input class="controls" type="email" name="email" id="email" placeholder="Email Address">
+          <input class="controls" type="password" name="password" id="password" placeholder="Password">
+            <p>I agree with the Terms and Conditions</a></p>
+          <input class="botons" type="submit" value="Sign Up">
+            <p><a href="#">¿Do I already have an Account?</a></p>
+        </section>
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Plans & Pricing</a></li>
+            <li><a href="#">New Equipment</a></li>
+            <li><a href="#">Registration</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+    
+        <script>
+          const menuToggle = document.querySelector(".toggle");
+          const showcase = document.querySelector(".showcase");
+    
+          menuToggle.addEventListener("click", () => {
+            menuToggle.classList.toggle("active");
+            showcase.classList.toggle("active");
+          });
+        </script>
+
+    </body>
+</html>
